@@ -143,5 +143,5 @@ pred_4 <- (1 + dfmat_5[,"singles"]*1.5 +
              dfmat_5[,"off"]*1.5 + 
              dfmat_5[,"important"]*2 + 
              dfmat_5[,"attached"]*3 +
-             dfmat_5[,"help"]*1)@x
+             dfmat16_5[,"help"]*1)@x
 pred_4
