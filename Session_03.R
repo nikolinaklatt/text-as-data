@@ -1,11 +1,7 @@
 # working with Chris Bail https://cbail.github.io/textasdata/apis/rmarkdown/Application_Programming_interfaces.html 
 
 # setting up my Twitter API login
-app_name<-"TaDa_NK"
-consumer_key<-"BMCSl8hBu0drY09V8ER76zCkc"
-consumer_secret<-"CeU3Mvv6KtUyrFDdVWsK4q2MUWyYTyIlQ03X9yuIEUZWNvLRiW"
-access_token<-"795895161746259969-qBy7Oevs23vvZrWG7WRmYW69dRd9V9w"
-access_token_secret<-"XiPAUA5yzLTaJmE0MzJWgHlY3HvFcpBRCRUfBDQGcehPJ"
+
 
 # required packages 
 library(devtools)
@@ -136,3 +132,9 @@ head(for_analysis$date)
 # For example, if we wanted to only look at tweets for August, we could do this:
   august_tweets<-for_analysis[for_analysis$date>"2018-07-31"&
                                 for_analysis$date<"2018-09-01",]
+  
+  
+  ### class notes
+# making requests through R with httr
+  r <- GET("https://www.iea.org/policies")
+r
